@@ -1,0 +1,47 @@
+<header>
+    <aside class="logo-sec">
+        <span class="logo">
+            <a href=""><img src="/assets/images/logo.jpg" alt=""></a>
+        </span>
+    </aside>
+    <aside class="head-links">
+        <ul class="lists">
+            <li routerLinkActive="active">
+                <a [routerLink]="''">HOME</a>
+            </li>
+            <li>
+                <a [routerLink]="'gallery'">GALLERY</a>
+            </li>
+            <li>
+                <a [routerLink]="'about-us'">ABOUT US</a>
+            </li>
+            <li>
+                <a [routerLink]="'contact-us'">CONTACT US</a>
+            </li>
+        </ul>
+    </aside>
+    <mat-toolbar  class="menu-tool">
+        <button mat-icon-button (click)="toggleMenu()" class="toggle-button">
+            <span class="material-icons">
+                menu
+            </span> </button>
+
+        <div class="menu-items" [ngClass]="{ 'show': showMenu }">
+            <ul class="lists">
+                <li routerLinkActive="active">
+                    <a [routerLink]="''" (click)="toggleMenu()">HOME</a>
+                </li>
+                <li>
+                    <a [routerLink]="'gallery'" (click)="toggleMenu()">GALLERY</a>
+                </li>
+                <li>
+                    <a [routerLink]="'about-us'" (click)="toggleMenu()">ABOUT US</a>
+                </li>
+                <li>
+                    <a [routerLink]="'contact-us'" (click)="toggleMenu()">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar>
+
+</header>

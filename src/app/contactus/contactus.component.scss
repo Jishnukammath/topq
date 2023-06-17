@@ -1,0 +1,55 @@
+section{
+    .contact-us{
+        height: 70vh;
+        background-image:url(/assets/images/bgcs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        padding-left: 20rem;
+        .titles{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            .title{
+                font-size: 3rem;
+            }
+            .contents{
+                font-size: 1.5rem;
+                max-width: 80rem;
+            }
+        }
+        .num{
+            font-size: 3.5rem;
+            font-weight: 600;
+            color:white;
+        }
+        &::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70vh;
+        }
+    }
+    .our-loc{
+        background-image: url(/assets/images/mapbg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        position: relative;
+        &::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60vh;
+        }
+    }
+}
